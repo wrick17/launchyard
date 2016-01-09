@@ -35,6 +35,8 @@
     if (list.length < 1) {
       $('.new-entry-box').show();
     }
+    else
+     $('.new-entry-box').hide();
 
     $('.list').html(createList(list));
 
