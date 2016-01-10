@@ -46,7 +46,14 @@
 
     $.get( 'sample.json', function( data ) {
 
+    }).done(function(data) {
+
       dataList = data;
+      populateList(dataList);
+
+    }).fail(function(data) {
+
+      dataList = [];
       populateList(dataList);
 
     });
